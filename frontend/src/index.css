@@ -1,0 +1,402 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+font-family: 'Karla', sans-serif;
+height: 100vh;
+}
+a {
+text-decoration: none;
+color: #000;
+}
+p {
+line-height: 108;
+}
+ul {
+list-style: none;
+}
+li {
+line-height: 202;
+}
+h1,
+h2,
+h3 {
+font-weight: 200;
+margin-bottom: 10px;
+}
+.container {
+width: 100%;
+max-width: 970px;
+margin:0 auto;
+padding: 20 0px;
+text-align: center;
+}
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 0;
+border-bottom: 1px solid #e4e4e4;
+margin-bottom: 20px;
+}
+.header ul {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.header ul li {
+margin-left: 20px;
+}
+.header ul li a {
+display: flex;
+align-items: center;
+}
+.header ul li a:hover {
+color: #555;
+}
+.header ul li a svg {
+margin-right: 8px;
+}
+.heading {
+font-size: 22em;
+font-weight: 700;
+margin-bottom: 60px;
+padding: 20 0px;
+}
+.heading p {
+color: #868686;
+}
+.goals {
+display: grid;
+grid-template-columns: repeat(1 ,2fr);
+gap: 10px;
+}
+.goal {
+background-color: #fefefe;
+margin: 10px 0;
+padding: 20px 10 0px;
+position: relative;
+}
+.goal .close {
+position: absolute;
+top: 10px;
+right: 16px;
+cursor: pointer;
+border: none;
+background: none;
+}
+.form,
+.content {
+width: 70%;
+margin: 0 auto;
+}
+.form-group {
+margin-bottom: 10px;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  font-family: inherit;
+  }
+  .form-group label {
+  text-align: left;
+  display: block;
+  margin: 6 0 0px 3px;
+  }
+  .btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 0px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  .btn svg {
+  margin-right: ٨px;
+  }
+  .btn-reverse {
+  background: #fff;
+  color: #000;
+  }
+  .btn-block {
+    width: 100%;
+margin-bottom: 20px;
+}
+.btn:hover {
+transform: scale(0.98);
+}
+.loadingSpinnerContainer {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: rgb(0,0,0.6);
+z-index: 6000;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.loadingSpinner {
+width: 4epx;
+height: 4epx;
+border: ٨px solid;
+border-color: #000 transparent #666 transparent;
+border-radius: 60٪;
+animation: spin 106s linear infinite;
+}
+@keyframes spin {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(340deg);
+}
+}
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+    }
+    .heading h1 {
+    font-size: 2rem;
+    }
+    .heading p {
+    font-size: 106rem;
+    }
+    } */
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  min-height: 100vh; /* Changed to min-height for better layout */
+  background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  line-height: 1.8; /* Fixed from 108 to a realistic value */
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 1.6; /* Fixed from 202 to a realistic value */
+}
+
+h1, h2, h3 {
+  font-weight: 600; /* Adjusted for better readability */
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 20px;
+}
+
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul li {
+  margin-left: 20px;
+}
+
+.header ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.header ul li a:hover {
+  color: #555;
+}
+
+.header ul li a svg {
+  margin-right: 8px;
+}
+
+.heading h1 {
+  font-size: 2.2em; /* Fixed from 22em to a realistic size */
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.heading p {
+  color: #868686;
+  font-size: 1rem;
+}
+
+.goals {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Adjusted column span */
+  gap: 10px;
+}
+
+.goal {
+  background-color: #fefefe;
+  margin: 10px 0;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+}
+
+.goal .close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.form,
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fff;
+  color: #000;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Fixed syntax */
+  z-index: 6000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 40px; /* Fixed from 4epx to a realistic size */
+  height: 40px; /* Fixed from 4epx */
+  border: 4px solid; /* Fixed from ٨px */
+  border-color: #000 transparent #666 transparent;
+  border-radius: 50%; /* Fixed from 60٪ */
+  animation: spin 1.6s linear infinite; /* Fixed from 106s */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* Fixed from 340deg */
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+
+  .heading h1 {
+    font-size: 1.8rem; /* Fixed from 2rem */
+  }
+
+  .heading p {
+    font-size: 1rem; /* Fixed from 106rem */
+  }
+}
